@@ -86,7 +86,7 @@ export default function Home() {
 `,
     },
     {
-      name: "old school postion absolute and transform",
+      name: "old school position absolute and transform",
       idName: "oldschool1",
       code: `.outer-div {
   position: relative;
