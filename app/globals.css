@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #1b1e27;
+  --foreground: #fdf8f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+#flex-center .outer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#flex2-center .outer-div {
+  display: flex;
+}
+
+#flex2-center .inner-div {
+  margin: auto;
+}
+
+#grid-center .outer-div {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#grid2-center .outer-div {
+  display: grid;
+  place-items: center;
+}
+
+#grid3-center .outer-div {
+  display: grid;
+  place-content: center;
+}
+
+#grid4-center .outer-div {
+  display: grid;
+}
+
+#grid4-center .inner-div {
+  place-self: center;
+}
+
+#grid5-center .outer-div {
+  display: grid;
+}
+
+#grid5-center .inner-div {
+  margin: auto;
+}
+
+#align-justify-center .outer-div {
+  align-content: center;
+  justify-items: center;
+}
+
+#oldschool1 .outer-div {
+  position: relative;
+}
+
+#oldschool1 .inner-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#oldschool2 .outer-div {
+  position: relative;
+}
+
+#oldschool2 .inner-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+#oldschool3 .outer-div {
+  position: relative;
+}
+
+#oldschool3 .inner-div {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
